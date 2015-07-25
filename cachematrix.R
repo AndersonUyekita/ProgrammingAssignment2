@@ -37,10 +37,10 @@ cacheSolve <- function(x, ...)
         
         #### Testing the valeu of "m" ####
         if(!is.null(m))
-        {
+                {
                 message("getting cached data")
                 return(m)
-        }
+                }
         
         data <- x$get()
         
@@ -48,3 +48,5 @@ cacheSolve <- function(x, ...)
         x$setsolve(m)
         m ## return the inverse matrix
 }
+
+# Thank you!
